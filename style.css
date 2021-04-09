@@ -16,7 +16,7 @@ div.nav-bar {
 }
 
 .ham-icon{
-    color: #88949B;
+    color: #24323d;
     display: none;
 }
 
@@ -45,7 +45,7 @@ ul li a {
 
 ul li a:hover {
     color: #304353;
-    background: #fff;
+    background: rgb(238, 237, 237);
     padding: 0.5rem;
 }
 
@@ -368,16 +368,33 @@ div.footer h6 {
         display: flex;
         height: 0.1rem;
         cursor: pointer;
+        position: absolute;
+        top: 2.5vw;
+        left: 10.5vw;
+        z-index: 1;
     }
 
     .ham-icon:active{
-        color: #fff;
+        color: rgb(238, 237, 237);
     }
 
     div.nav-bar {
         padding: 0.5rem 3rem;
     }
-    
+
+    ul li{
+        margin: 0;
+    }
+
+    ul li a{
+        display: block;
+        background-color: #88949B;
+        color: #304353;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 0;
+    }
+
     ul.nav-links {
         padding: 1rem;
         width: 20%;
@@ -386,11 +403,15 @@ div.footer h6 {
 
     ul.nav-links.toggleCls{
         display: block;
+        width: 80vw;
+        background-color: #88949B;
+        color: #304353;
+        text-align: center;
+        margin: 1rem;
+        padding: 0;
     }
     
-    ul li a:hover {
-        padding: 0.15rem;
-    }
+   
 
 
     div.hero-section {
@@ -455,9 +476,19 @@ div.footer h6 {
     div.nav-bar{
         flex-direction: row-reverse;
     }
+
+    .ham-icon{
+        top: 4vw;
+        left: 12.5vw;
+    }
     
     div.logo{
         display: none;
+    }
+
+    ul.nav-links.toggleCls{
+        margin-left: 0;
+        margin-right: 0;
     }
 
     div.hero-section{
@@ -536,4 +567,4 @@ div.footer h6 {
     div.footer h6{
         padding-top: 4rem;
         font-size: 0.8rem;
-    } 
+    }
